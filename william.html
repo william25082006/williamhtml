@@ -1,24 +1,294 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="william.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="william.css">
 </head>
 <body>
-    <div class="barra"></div>
-    <div class="barra">
-        <img class="imagem-barra" src="Kabum-Photoroom.png" alt="">
-    </div>
 
-    <div class="barra">
-        <img class="imagem-barra" src="img/logo.png" alt="">
-    
-        <form class="busca" action="/buscar" method="GET">
-            <input type="text" name="q" placeholder="Busque no KABUM!" />
-            
-        </form>
+  <!-- BARRA PROMOCIONAL -->
+<div class="barra-promocional">
+  <img class="imagem-promocao" src="91747059852.webp" alt="Banner Promocional">
+</div>
+
+  <!-- BARRA PRINCIPAL AZUL -->
+  <div class="barra">
+    <img class="imagem-barra" src="d800415d-50fe-4d30-90ba-b950ec13ee0f-removebg-preview.png" alt="Logo KaBuM!">
+
+    <form class="busca" action="/buscar" method="GET">
+      <input type="text" name="q" placeholder="Busque no KABUM!" />
+
+      <!--BOTOES DE REFRESH-->
+
+      <div class="botoes-refresh">
+        
+       <a href="#" class="btn-departamentos" onclick="location.reload(); return false;">Departamentos ▼</a>
+<a href="#" class="btn btn-cupons" onclick="location.reload(); return false;">Cupons</a>
+<a href="#" class="btn btn-maisvendidos" onclick="location.reload(); return false;">Mais Vendidos</a>
+<a href="#" class="btn" onclick="location.reload(); return false;">Venda no KaBuM!</a>
+<a href="#" class="btn" onclick="location.reload(); return false;">Hardware</a>
+<a href="#" class="btn" onclick="location.reload(); return false;">PC Gamer</a>
+<a href="#" class="btn" onclick="location.reload(); return false;">Computadores</a>
+<a href="#" class="btn" onclick="location.reload(); return false;">Periféricos</a>
+<a href="#" class="btn" onclick="location.reload(); return false;">Escritório</a>
+<a href="#" class="btn" onclick="location.reload(); return false;">Blog KaBuM</a>
+<a href="#" class="btn" onclick="location.reload(); return false;">Julho Gamer</a>
+
+    <div class="menu-usuario">
+    <div class="login">
+      <i class="fas fa-user-circle"></i>
+      <div class="login-texto">
+        <span><strong>Entre</strong> ou</span>
+        <a href="#">Cadastre-se</a>
+      </div>
     </div>
+    <div class="icones-acao">
+      <i class="fas fa-headset" title="Suporte"></i>
+      <i class="fas fa-universal-access" title="Acessibilidade"></i>
+      <i class="fas fa-heart" title="Favoritos"></i>
+      <i class="fas fa-shopping-cart" title="Carrinho"></i>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<video
+  autoplay
+  muted
+  loop
+  class="video-kabum"
+  style="cursor:pointer;">
+  <source src="videokabum.mp4" type="video/mp4">
+</video>
+
+<!-- ==================== PRODUTOS EM DESTAQUE ==================== -->
+<section class="faixa-produtos">
+  <header class="faixa-topo">
+    <h2>JULHO GAMER</h2>
+
+    <!-- Relógio / contador fictício -->
+    <div class="timer">
+      TERMINA EM:
+      <span class="relogio" id="countdown">20D 06 : 00 : 30</span>
+    </div>
+  </header>
+
+  <div class="lista-cards">
+  <!-- CARD 2 (repita / copie modificando dados) -->
+    <article class="card-produto">
+      <span class="tag">FRETE GRÁTIS</span>
+      <figure>
+        <img src="notebook-lenovo-loq-e-core-i5-12450hx-rtx-3050-16gb-512gb-ssd-15-6-fhd-ips-144hz-win-11-luna-cinza-83me0007br_1744042876_m.webp" alt="Notebook Gamer" />
+      </figure>
+      <div class="avaliacao">
+        ★★★★★ <small>(23)</small>
+      </div>
+      <p class="nome">Notebook Gamer Storm 15"</p>
+      <div class="precos">
+        <span class="de">R$ 6.499,09</span>
+        <span class="por">R$ 5.899,87</span>
+      </div>
+      <button class="btn-comprar" onclick="location.reload(); return false;">Comprar</button>
+    </article>
+
+    <!-- CARD 2 (repita / copie modificando dados) -->
+    <article class="card-produto">
+      <span class="tag">FRETE GRÁTIS</span>
+      <figure>
+        <img src="notebook-lenovo-loq-e-core-i5-12450hx-rtx-3050-16gb-512gb-ssd-15-6-fhd-ips-144hz-win-11-luna-cinza-83me0007br_1744042876_m.webp" alt="Notebook Gamer" />
+      </figure>
+      <div class="avaliacao">
+        ★★★★★ <small>(23)</small>
+      </div>
+      <p class="nome">Notebook Gamer Storm 15"</p>
+      <div class="precos">
+        <span class="de">R$ 6.499,09</span>
+        <span class="por">R$ 5.899,87</span>
+      </div>
+      <button class="btn-comprar" onclick="location.reload(); return false;">Comprar</button>
+    </article>
+
+    <!-- CARD 2 (repita / copie modificando dados) -->
+    <article class="card-produto">
+      <span class="tag">FRETE GRÁTIS</span>
+      <figure>
+        <img src="notebook-lenovo-loq-e-core-i5-12450hx-rtx-3050-16gb-512gb-ssd-15-6-fhd-ips-144hz-win-11-luna-cinza-83me0007br_1744042876_m.webp" alt="Notebook Gamer" />
+      </figure>
+      <div class="avaliacao">
+        ★★★★★ <small>(23)</small>
+      </div>
+      <p class="nome">Notebook Gamer Storm 15"</p>
+      <div class="precos">
+        <span class="de">R$ 6.499,09</span>
+        <span class="por">R$ 5.899,87</span>
+      </div>
+     <button class="btn-comprar" onclick="location.reload(); return false;">Comprar</button>
+    </article>
+
+   <!-- CARD 2 (repita / copie modificando dados) -->
+    <article class="card-produto">
+      <span class="tag">FRETE GRÁTIS</span>
+      <figure>
+        <img src="notebook-lenovo-loq-e-core-i5-12450hx-rtx-3050-16gb-512gb-ssd-15-6-fhd-ips-144hz-win-11-luna-cinza-83me0007br_1744042876_m.webp" alt="Notebook Gamer" />
+      </figure>
+      <div class="avaliacao">
+        ★★★★★ <small>(23)</small>
+      </div>
+      <p class="nome">Notebook Gamer Storm 15"</p>
+      <div class="precos">
+        <span class="de">R$ 6.499,09</span>
+        <span class="por">R$ 5.899,87</span>
+      </div>
+      <button class="btn-comprar" onclick="location.reload(); return false;">Comprar</button>
+    </article>
+
+    <!-- CARD 2 (repita / copie modificando dados) -->
+    <article class="card-produto">
+      <span class="tag">FRETE GRÁTIS</span>
+      <figure>
+        <img src="notebook-lenovo-loq-e-core-i5-12450hx-rtx-3050-16gb-512gb-ssd-15-6-fhd-ips-144hz-win-11-luna-cinza-83me0007br_1744042876_m.webp" alt="Notebook Gamer" />
+      </figure>
+      <div class="avaliacao">
+        ★★★★★ <small>(23)</small>
+      </div>
+      <p class="nome">Notebook Gamer Storm 15"</p>
+      <div class="precos">
+        <span class="de">R$ 6.499,09</span>
+        <span class="por">R$ 5.899,87</span>
+      </div>
+      <button class="btn-comprar" onclick="location.reload(); return false;">Comprar</button>
+    </article>
+
+    <!-- CARD 1 -->
+    <article class="card-produto">
+      <span class="tag">CUPOM PS300</span>
+
+      <figure>
+        <img src="console-playstation-5-sony-slim-branco-2-jogos-1000038899_1710512868_m.webp" alt="PlayStation 5 Bundle" />
+      </figure>
+
+      <div class="avaliacao">
+        ★★★★★ <small>(361)</small>
+      </div>
+
+      <p class="nome">PlayStation 5 – Slim Bundle</p>
+
+      <div class="precos">
+        <span class="de">R$ 3.999,98</span>
+        <span class="por">R$ 3.499,75</span>
+      </div>
+
+      <button class="btn-comprar" onclick="location.reload(); return false;">Comprar</button>
+    </article>
+
+    <!-- CARD 1 -->
+    <article class="card-produto">
+      <span class="tag">CUPOM PS300</span>
+
+      <figure>
+        <img src="console-playstation-5-sony-slim-branco-2-jogos-1000038899_1710512868_m.webp" alt="PlayStation 5 Bundle" />
+      </figure>
+
+      <div class="avaliacao">
+        ★★★★★ <small>(361)</small>
+      </div>
+
+      <p class="nome">PlayStation 5 – Slim Bundle</p>
+
+      <div class="precos">
+        <span class="de">R$ 3.999,98</span>
+        <span class="por">R$ 3.499,75</span>
+      </div>
+
+      <button class="btn-comprar" onclick="location.reload(); return false;">Comprar</button>
+    </article>
+
+    <!-- CARD 1 -->
+    <article class="card-produto">
+      <span class="tag">CUPOM PS300</span>
+
+      <figure>
+        <img src="console-playstation-5-sony-slim-branco-2-jogos-1000038899_1710512868_m.webp" alt="PlayStation 5 Bundle" />
+      </figure>
+
+      <div class="avaliacao">
+        ★★★★★ <small>(361)</small>
+      </div>
+
+      <p class="nome">PlayStation 5 – Slim Bundle</p>
+
+      <div class="precos">
+        <span class="de">R$ 3.999,98</span>
+        <span class="por">R$ 3.499,75</span>
+      </div>
+
+     <button class="btn-comprar" onclick="location.reload(); return false;">Comprar</button>
+    </article>
+
+   <!-- CARD 1 -->
+    <article class="card-produto">
+      <span class="tag">CUPOM PS300</span>
+
+      <figure>
+        <img src="console-playstation-5-sony-slim-branco-2-jogos-1000038899_1710512868_m.webp" alt="PlayStation 5 Bundle" />
+      </figure>
+
+      <div class="avaliacao">
+        ★★★★★ <small>(361)</small>
+      </div>
+
+      <p class="nome">PlayStation 5 – Slim Bundle</p>
+
+      <div class="precos">
+        <span class="de">R$ 3.999,98</span>
+        <span class="por">R$ 3.499,75</span>
+      </div>
+
+    <button class="btn-comprar" onclick="location.reload(); return false;">Comprar</button>
+    </article>
+
+   <!-- CARD 1 -->
+    <article class="card-produto">
+      <span class="tag">CUPOM PS300</span>
+
+      <figure>
+        <img src="console-playstation-5-sony-slim-branco-2-jogos-1000038899_1710512868_m.webp" alt="PlayStation 5 Bundle" />
+      </figure>
+
+      <div class="avaliacao">
+        ★★★★★ <small>(361)</small>
+      </div>
+
+      <p class="nome">PlayStation 5 – Slim Bundle</p>
+
+      <div class="precos">
+        <span class="de">R$ 3.999,98</span>
+        <span class="por">R$ 3.499,75</span>
+      </div>
+
+       <button class="btn-comprar" onclick="location.reload(); return false;">Comprar</button>
+    </article>
+
+    <article class="imagens-final">
+     <figure>
+        <img src="1705943107.webp" alt=""/>
+      </figure>
+        <figure>
+        <img src="1718990187.webp" alt="" />
+      </figure>
+        <figure>
+        <img src="1725648357.webp" alt="" />
+      </figure>
+    </article>
+
+</section>
 </body>
 </html>
